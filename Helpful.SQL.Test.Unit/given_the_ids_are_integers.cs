@@ -9,7 +9,7 @@ namespace Helpful.SQL.Test.Unit
         [OneTimeSetUp]
         protected void Given()
         {
-            ISelectWhereIdInLargeCollection<int>  sqlBuilder = new SelectWhereIdInLargeCollection<int>("SELECT t.Col1, t.Col2, t.Col3 FROM Tbl t", "t.Col1", "int");
+            IWhereIdInLargeCollection<int>  sqlBuilder = new WhereIdInLargeCollection<int>("SELECT t.Col1, t.Col2, t.Col3 FROM Tbl t", "t.Col1", "int");
             _sql = sqlBuilder.GenerateSQL(new[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 });
         }
 

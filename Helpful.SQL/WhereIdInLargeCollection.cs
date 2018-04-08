@@ -3,14 +3,14 @@ using System.Collections.Generic;
 
 namespace Helpful.SQL
 {
-    public class SelectWhereIdInLargeCollection<TIdType> : ISelectWhereIdInLargeCollection<TIdType>
+    public class WhereIdInLargeCollection<TIdType> : IWhereIdInLargeCollection<TIdType>
     {
         private readonly string _baseSelectQuery;
         private readonly string _idIdentifier;
         private readonly string _idColumnSQLType;
         private readonly string _tempTableName = Guid.NewGuid().ToString().Replace("-", string.Empty);
 
-        public SelectWhereIdInLargeCollection(string baseSelectQuery, string idIdentifier, string idColumnSQLType)
+        public WhereIdInLargeCollection(string baseSelectQuery, string idIdentifier, string idColumnSQLType)
         {
             _baseSelectQuery = baseSelectQuery;
             _idIdentifier = idIdentifier;

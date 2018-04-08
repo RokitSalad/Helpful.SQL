@@ -40,8 +40,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ISelectWhereIdInLargeCollection.cs" />
-    <Compile Include="SelectWhereIdInLargeCollection.cs" />
+    <Compile Include="IWhereIdInLargeCollection.cs" />
+    <Compile Include="WhereIdInLargeCollection.cs" />
     <Compile Include="ListExtensions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

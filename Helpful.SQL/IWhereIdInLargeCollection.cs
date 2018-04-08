@@ -2,7 +2,7 @@
 
 namespace Helpful.SQL
 {
-    public interface ISelectWhereIdInLargeCollection<TIdType>
+    public interface IWhereIdInLargeCollection<in TIdType>
     {
         string GenerateSQL(IEnumerable<TIdType> referenceData);
     }
